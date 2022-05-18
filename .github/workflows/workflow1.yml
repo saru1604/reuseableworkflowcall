@@ -42,15 +42,11 @@ jobs:
             echo "final_tag=${{inputs.tag}}" >> $GITHUB_ENV
           fi
   
-#           run: |
-#           - name: do somethin
-#                 echo "hi"
-          
+#           run: |                  
 #            do-something-else:
 #               runs-on: ubuntu-latest
 #               steps:
-#               - run:
-#               echo "Hello"
+#               - run: echo "Hello"
 
 
 #       - name: Build and Push the Image
