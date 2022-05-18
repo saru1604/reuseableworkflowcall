@@ -32,7 +32,7 @@ jobs:
           context: .
           push: true
           tags: ${{secrets.registry_username}}/${{inputs.image_name}}:${{env.final_tag}}
-         
+#          run:
       - name: Set the tag
         run: |
           if [ -z " hi ${{inputs.tag}}" ]
