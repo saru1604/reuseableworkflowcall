@@ -6,8 +6,8 @@ on:
       image_name:
         required: true
         type: string
-#       tag: 
-#         type: string
+      tag: 
+        type: string
     secrets:
       registry_username:
         required: true
@@ -40,7 +40,7 @@ jobs:
 
       - name: Set the tag
         run: |
-          if [ -z "${{inputs.tag}}" ]
+          if [ -z " hi ${{inputs.tag}}" ]
           then
             echo "final_tag=latest" >> $GITHUB_ENV
           else
