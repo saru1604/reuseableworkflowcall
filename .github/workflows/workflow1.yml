@@ -33,11 +33,7 @@ jobs:
           push: true
           tags: ${{secrets.registry_username}}/${{inputs.image_name}}:${{env.final_tag}}
 #          run:
-#             do-something-else:
-#              runs-on: ubuntu-latest
-#              steps:
-#                 - run: echo "Hello"
-
+#             
       - name: Set the tag
         run: |
           if [ -z " hi ${{inputs.tag}}" ]
@@ -46,6 +42,12 @@ jobs:
           else
             echo "final_tag=${{inputs.tag}}" >> $GITHUB_ENV
           fi
+      - name: do somethin
+  do-something-else:
+              runs-on: ubuntu-latest
+              steps:
+              - run: echo "Hello"
+
 
 #       - name: Build and Push the Image
 #         uses: docker/build-push-action@v2      
