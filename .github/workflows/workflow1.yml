@@ -10,9 +10,9 @@ on:
         type: string
     secrets:
       registry_username:
-        required: true
+        required: false
       registry_password:
-        required: true
+        required: false
 
 jobs:
   build:
