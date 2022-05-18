@@ -42,9 +42,9 @@ jobs:
             echo "final_tag=${{inputs.tag}}" >> $GITHUB_ENV
           fi
   
-          run: |
-          - name: do somethin
-                echo "hi"
+#           run: |
+#           - name: do somethin
+#                 echo "hi"
           
 #            do-something-else:
 #               runs-on: ubuntu-latest
