@@ -1,4 +1,4 @@
-name: compliance
+name: workflow1
 
 on:
   workflow_call:
